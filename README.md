@@ -50,7 +50,7 @@ To successfully run the Performance_Prediction_in_F1.ipynb notebook, please foll
      Run each cell sequentially:
 
      The notebook will:
-       - Load datasets from CSV files.( Do not run any cells which is fetching data from FastF1 API, it will take lot of time to set up the dataset. Hence, I have saved the required data in csv files).
+       - Load datasets from CSV files. (Do not run any cells which is fetching data from FastF1 API, it will take lot of time to set up the dataset. Hence, I have saved the required data in csv files).
        - Perform preprocessing and feature engineering.
        - Train models for both Striking Distance and Overtake Likelihood.
        - Evaluate models and display performance metrics.
