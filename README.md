@@ -34,8 +34,6 @@ To successfully run the Performance_Prediction_in_F1.ipynb notebook, please foll
 
     Place the following CSV files in the root directory: If this does not work for you then directly edit the path of stored csv files in "save_path" variable
 
-    Copy
-    Edit
     ├── Performance_Prediction_in_F1.ipynb
     ├── train_laps.csv
     ├── test_laps.csv
