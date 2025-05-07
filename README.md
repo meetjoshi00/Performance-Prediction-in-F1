@@ -11,6 +11,7 @@ The project uses pre-extracted race data for training and testing to overcome th
 
 
 Dataset Description:
+
 We have four main CSV files which contain the necessary data for training and testing our machine learning models:
 
   1. train_laps.csv - This dataset includes lap-by-lap information for the years 2022-2024, which is used for training the Striking Distance Prediction model.
@@ -22,6 +23,7 @@ We have four main CSV files which contain the necessary data for training and te
   4. test_telemetry_features.csv - This is the testing set for telemetry data, specifically for the year 2025.
 
 Setup Instructions:
+
 To successfully run the Performance_Prediction_in_F1.ipynb notebook, please follow the steps below:
 
   1. Environment Setup:
@@ -40,19 +42,24 @@ To successfully run the Performance_Prediction_in_F1.ipynb notebook, please foll
     └── test_telemetry_features.csv
 
   3. API Limitations and Data Caching:
-     The FastF1 API, which is used to fetch telemetry and lap data, has a limit of 500 requests/hour. To overcome this limitation and speed up the workflow, I have pre-fetched all required data for 2022-2024 (for training) and 2025 (for testing) and        stored them in the respective CSV files. This allows the notebook to load data directly from the CSVs instead of making repeated API calls, ensuring faster execution and bypassing API rate limits.
+     - The FastF1 API, which is used to fetch telemetry and lap data, has a limit of 500 requests/hour.
+     - To overcome this limitation and speed up the workflow, I have pre-fetched all required data for 2022-2024 (for training) and 2025 (for testing) and stored them in the respective CSV files.
+     - This allows the notebook to load data directly from the CSVs instead of making repeated API calls, ensuring faster execution and bypassing API rate limits.
+       
   5. Open the Jupyter Notebook: Performance_Prediction_in_F1.ipynb
-      Run each cell sequentially:
 
-      The notebook will:
-       Load datasets from CSV files.( Do not run any cells which is fetching data from FastF1 API, it will take lot of time to set up the dataset. Hence, I have saved the required data in csv files). 
-       Perform preprocessing and feature engineering.
-       Train models for both Striking Distance and Overtake Likelihood.
-       Evaluate models and display performance metrics.
+     Run each cell sequentially:
+
+     The notebook will:
+       - Load datasets from CSV files.( Do not run any cells which is fetching data from FastF1 API, it will take lot of time to set up the dataset. Hence, I have saved the required data in csv files).
+       - Perform preprocessing and feature engineering.
+       - Train models for both Striking Distance and Overtake Likelihood.
+       - Evaluate models and display performance metrics.
      
   7.   Model Outputs:
-        At the end of the notebook, you will find:
-        Performance reports for both prediction tasks.
-        SHAP analysis for interpretability.
-        Graphical representations of model predictions.
+
+       At the end of the notebook, you will find:
+        - Performance reports for both prediction tasks.
+        - SHAP analysis for interpretability.
+        - Graphical representations of model predictions.
   
