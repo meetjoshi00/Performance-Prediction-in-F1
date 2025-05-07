@@ -1,6 +1,7 @@
 # Performance-Prediction-in-F1
 
 Overview:
+
 This project aims to predict two key aspects of Formula 1 races:
 
   1. Striking Distance Prediction - Using lap data to predict the likelihood of a chaser catching up to the leader.
